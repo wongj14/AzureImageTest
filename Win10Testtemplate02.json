@@ -2,7 +2,21 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "location": {
+        
+ 	"publisher": {
+			"type": "string",
+			"defaultValue": "MicrosoftWindowsDesktop"
+		},
+		"offer": {
+			"type": "string",
+			"defaultValue": "windows-10-1909-vhd-client-office-prod-stage"
+		},
+		"sku": {
+			"type": "string",
+			"defaultValue": "19h2-evd-o365pp"
+		}  
+ 
+"location": {
             "value": "westus"
         },
         "networkInterfaceName": {
