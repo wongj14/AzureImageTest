@@ -12,7 +12,7 @@
             "value": "Win10OfficePP01-nsg"
         },
         "networkSecurityGroupRules": {
-            "value": [
+            "value": {
                 {
                     "name": "RDP",
                     "properties": {
@@ -26,7 +26,7 @@
                         "destinationPortRange": "3389"
                     }
                 }
-            ]
+            }
         },
         "subnetName": {
             "value": "default"
@@ -35,19 +35,19 @@
             "value": "RG_WestUS_AzureImageBuilder-vnet"
         },
         "addressPrefixes": {
-            "value": [
+            "value": {
                 "10.0.1.0/24"
-            ]
+            }
         },
         "subnets": {
-            "value": [
+            "value": {
                 {
                     "name": "default",
                     "properties": {
                         "addressPrefix": "10.0.1.0/24"
                     }
                 }
-            ]
+            }
         },
         "publicIpAddressName": {
             "value": "Win10OfficePP01-ip"
