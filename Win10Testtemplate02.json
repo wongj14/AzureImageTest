@@ -16,7 +16,7 @@
 			"defaultValue": "19h2-evd-o365pp"
 		}  
  
-"location": {
+	"location": {
             "value": "westus"
         },
         "networkInterfaceName": {
