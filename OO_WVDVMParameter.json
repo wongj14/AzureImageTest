@@ -1,0 +1,91 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"_artifactsLocation": {
+			"value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/mainTemplate.json"
+		},
+		"rdshImageSource": {
+			"value": "SharedImageGallery"
+		},
+		"SharedImageGalleryResourceGroup": {
+			"value": "RG_WestUS_AzureImageBuilder"
+		},
+		"SharedImageGalleryName": {
+			"value": "WVD_SharedImageGallery"
+		},
+		"SharedImageGalleryDefinitionName": {
+			"value": "WVD-HostPool1-GoldenImage"
+		},
+		"SharedImageGalleryVersionName": {
+			"value": "latest"
+		},
+		"hostPoolName": {
+			"value": "OOPool1"
+		},
+		"rdshNamePrefix": {
+			"value": "OOVM001"
+		},
+		"rdshNumberOfInstances": {
+			"value": 1
+		},
+		"rdshVmSize": {
+			"value": "Standard_D2s_v3"
+		},
+		"rdshVMDiskType": {
+			"value": "Standard_LRS"
+		},
+		"domainToJoin": {
+			"value": "wvd.soshk.local"
+		},
+		"existingDomainUPN": {
+			"value": "azureadmin@wvd.soshk.local"
+		},
+		"existingDomainPassword": {
+			"type": "azure!QAZ2wsx",
+            "metadata": {
+                "description": "The password that corresponds to the existing domain username."
+			}
+		},
+		"ouPath": {
+			"value": ""
+		},
+		"existingVnetName": {
+			"value": "wvd_infra_vnet001"
+		},
+		"existingSubnetName": {
+			"value": "sn_192.168.2.0_24"
+		},
+		"virtualNetworkResourceGroupName": {
+			"value": "infra_rgp001"
+		},
+		"rdBrokerURL": {
+			"value": "https://rdbroker.wvd.microsoft.com"
+		},
+		"existingTenantGroupName": {
+			"value": "Default Tenant Group"
+		},
+		"existingTenantName": {
+			"value": "OOWVD"
+		},		
+		"defaultDesktopUsers": {
+			"value": ""
+		},
+		"tenantAdminUpnOrApplicationId": {
+			"value": "e043b35c-3b07-4a2e-b37f-2a628c171f7a"
+		},
+		"tenantAdminPassword": {
+			"type": "azure!QAZ2wsx",
+            "metadata": {
+                "description": "The password that corresponds to the existing domain username."
+				},
+			}
+		},
+		"isServicePrincipal": {
+			"value": true
+		},
+		"aadTenantId": {
+			"value": "2e18a230-30b0-4762-88aa-a99bcc70748f"
+		}
+	}
+}
