@@ -1,5 +1,5 @@
 { 
-	"type": "Microsoft.VirtualMachineImages/imageTemplates", 
+    "type": "Microsoft.VirtualMachineImages/imageTemplates", 
     "apiVersion": "2019-05-01-preview", 
     "location": "westus", 
     "tags": {
@@ -15,26 +15,26 @@
 			"osDiskSizeGB": 127
             },
 
-		"source": { 
-            "type": "ManagedImage", 
-                "imageId": "/subscriptions/0b869dd5-4f52-4272-b24b-d7b271b55f2f/resourceGroups/OOCL_Managed/providers/Microsoft.Compute/images/OOMVM01-image-20200314141001"
+     "source": { 
+         "type": "ManagedImage", 
+          "imageId": "/subscriptions/0b869dd5-4f52-4272-b24b-d7b271b55f2f/resourceGroups/OOCL_Managed/providers/Microsoft.Compute/images/OOMVM01-image-20200314141001"
         },
         "build": {}, 
         "customize": [
-					{
-						"type": "WindowsRestart",
-						"restartTimeout": "30m"
-					}
-		],  
+			{
+				"type": "WindowsRestart",
+				"restartTimeout": "30m"
+			}
+	],  
         "distribute": [
-				{
-					"type": "ManagedImage",
-					"imageId": "[variables('ManagedImageId')]",
-					"location": "[resourceGroup().location]",
-					"runOutputName": "OOAIBimage",
-					"artifactTags": {
-						}
-					}
-				]
+			{
+				"type": "ManagedImage",
+				"imageId": "[variables('ManagedImageId')]",
+				"location": "[resourceGroup().location]",
+				"runOutputName": "OOAIBimage",
+				"artifactTags": {
+			}
+		}
+	]
       } 
  }
