@@ -1,0 +1,26 @@
+{ 
+	"type": "Microsoft.VirtualMachineImages/imageTemplates", 
+    "apiVersion": "2019-05-01-preview", 
+    "location": "westus", 
+    "tags": {
+        "imagebuilderTemplate": "windows10+pp_ManagedVM",
+             }
+    "identity":{},			 
+    "dependsOn": [], 
+    "properties": { 
+        "buildTimeoutInMinutes": 100, 
+        "vmProfile": 
+            {
+            "vmSize": "Standard_b2ms",
+			"osDiskSizeGB": 127
+            },
+
+		"source": { 
+            "type": "ManagedImage", 
+                "imageId": "/subscriptions/0b869dd5-4f52-4272-b24b-d7b271b55f2f/resourceGroups/OOCL_Managed/providers/Microsoft.Compute/images/OOMVM01-image-20200314141001"
+        },
+        "build": {}, 
+        "customize": {}, 
+        "distribute": {} 
+      } 
+ }
