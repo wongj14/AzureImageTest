@@ -1,7 +1,7 @@
 { 
 	"type": "Microsoft.VirtualMachineImages/imageTemplates", 
     "apiVersion": "2019-05-01-preview", 
-    "location": "West US", 
+    "location": "westus", 
     "tags": {
         "imagebuilderTemplate": "windows10+pp_ManagedVM",
              }
