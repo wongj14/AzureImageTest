@@ -4,7 +4,7 @@
     "location": "westus", 
     "tags": {
         "imagebuilderTemplate": "windows10+pp_ManagedVM",
-             }
+             },
     "identity":{},			 
     "dependsOn": [], 
     "properties": { 
