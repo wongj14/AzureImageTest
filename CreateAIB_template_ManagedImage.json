@@ -2,7 +2,9 @@
     "type": "Microsoft.VirtualMachineImages/imageTemplates", 
     "apiVersion": "2019-05-01-preview", 
     "location": "westus", 
-    "tags": {},	 
+    "tags": {
+        "imagebuilderTemplate": "windows10+pp_ManagedVM",
+             },		 
     "dependsOn": [], 
     "properties": { 
         "buildTimeoutInMinutes": 100, 
