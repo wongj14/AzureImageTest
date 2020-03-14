@@ -4,8 +4,7 @@
     "location": "westus", 
     "tags": {
         "imagebuilderTemplate": "windows10+pp_ManagedVM",
-             },
-    "identity":{},			 
+             },		 
     "dependsOn": [], 
     "properties": { 
         "buildTimeoutInMinutes": 100, 
@@ -19,22 +18,13 @@
          "type": "ManagedImage", 
           "imageId": "/subscriptions/0b869dd5-4f52-4272-b24b-d7b271b55f2f/resourceGroups/OOCL_Managed/providers/Microsoft.Compute/images/OOMVM01-image-20200314141001"
         },
-        "build": {}, 
+        
         "customize": [
 			{
 				"type": "WindowsRestart",
 				"restartTimeout": "30m"
 			}
-	],  
-        "distribute": [
-			{
-				"type": "ManagedImage",
-				"imageId": "[variables('ManagedImageId')]",
-				"location": "[resourceGroup().location]",
-				"runOutputName": "OOAIBimage",
-				"artifactTags": {
-			}
-		}
-	]
-      } 
+		]  
+        
+    } 
  }
