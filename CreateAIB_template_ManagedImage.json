@@ -48,12 +48,12 @@
 
                   },
         
-        "customize": [
+        "customize": 
 			{
 				"type": "WindowsRestart",
 				"restartTimeout": "30m"
 			}
-		]  
+		
         
     } 
  }
